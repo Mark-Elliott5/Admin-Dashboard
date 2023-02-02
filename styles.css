@@ -1,13 +1,14 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Side bar */
 
 #side-bar {
     grid-row: 1 / 4;
-    grid-column: 1 / 1;
+    grid-column: 1;
     background-color: #1992d4;
     color: white;
     display: grid;
@@ -27,9 +28,10 @@ body {
 /* Nav search */
 
 #nav-search {
-    grid-column: 2 / 2;
+    grid-column: 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 1rem;
 }
 
 #submit-search {
@@ -44,15 +46,30 @@ body {
 /* Tool bar */
 
 #tool-bar {
-    grid-column: 2 / 2;
+    grid-column: 2;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 2rem;
+}
+
+#welcome-message {
+    display: flex;
+    gap: 1rem;
+}
+
+#welcome-message img {
+    width: 3rem;
+    align-self: center;
+}
+
+#actions {
+    align-self: center;
 }
 
 /* Main grid */
 
 #main-grid {
-    grid-column: 2 / 2;
+    grid-column: 2;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
@@ -62,8 +79,12 @@ body {
     padding: 1rem;
 }
 
+main p {
+    color: grey;
+}
+
 #projects-pane {
-    grid-column: 1 / 1;
+    grid-column: 1;
 }
 
 #projects {
@@ -72,12 +93,19 @@ body {
     gap: 1rem;
 }
 
-.project {
-    box-shadow: 3px 3px 6px 0px #00000036;
+.project, #announcements, #trending {
     background-color: white;
+    box-shadow: 3px 3px 6px 0px #00000036;
     border-radius: 8px;
-    border-left: outset 8px #f0b429;
     padding: 1rem;
+}
+
+.project {
+    border-left: outset 8px #f0b429;
+}
+
+#announcements-and-trending p{
+    font-size: small;
 }
 
 #announcements {

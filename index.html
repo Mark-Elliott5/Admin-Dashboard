@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -42,8 +45,11 @@
     </nav>
     <div id="tool-bar">
         <div id="welcome-message">
-            <span id="hi-there">Hi there,</span>
-            <span id="name">Morgan Oakley (@morgan)</span>
+            <img src="images/shiba-icon.png">
+            <div>
+                <p id="hi-there">Hi there,</p>
+                <p id="name">Morgan Oakley (@morgan)</p>
+            </div>
         </div>
         <div id="actions">
             <button id="new-project-button">New</button>
@@ -56,7 +62,7 @@
             <h2>Your Projects</h2>
             <div id="projects">
                 <div class="project">
-                    <h3>Super Cool Project</h3>
+                    <h4>Super Cool Project</h4>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitum 
                         nibh erat, id facilisis felis accumsan nec.
                     </p>
@@ -127,50 +133,53 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div id="announcements">
+        <div id="announcements-and-trending">
             <h2>Announcements</h2>
-            <p><h3>Site Maintenance</h3>Vestibulum condimentum tellus lacus, 
-            in accumsan elit maximus ac. Donec, hendrerit sodales congue...
-            </p>
-            <p><h3>Community Share Day</h3>Nam val lectus tincidunt, rutrum 
-                nulla eu, ornare libero. Aliquam dictum accumsan porttitor...
-            </p>
-            <p><h3>Updated Privacy Policy</h3>Phasellus efficitur nisi eget elit
-                 consectetur, eget condimentum ante auctor. Cras fringilla 
-                 sagittis sem in mattis...
-            </p>
+            <div id="announcements">
+                <h4>Site Maintenance</h4>
+                <p>Vestibulum condimentum tellus lacus, 
+                in accumsan elit maximus ac. Donec, hendrerit sodales congue...
+                </p>
+                <h4>Community Share Day</h4>
+                <p>Nam val lectus tincidunt, rutrum 
+                    nulla eu, ornare libero. Aliquam dictum accumsan porttitor...
+                </p>
+                <h4>Updated Privacy Policy</h4>
+                <p>Phasellus efficitur nisi eget elit
+                    consectetur, eget condimentum ante auctor. Cras fringilla 
+                    sagittis sem in mattis...
+                </p>
             </div>
+                <h2>Trending</h2>
             <div id="trending">
-            <h2>Trending</h2>
-            <div class="trends">
-                <img>
-                <div class="trend-box">
-                    <p class="trend-box-user">@tegan</p>
-                    <p class="trend-box-project">World Peace Builder</p>
+                <div class="trends">
+                    <img>
+                    <div class="trend-box">
+                        <p class="trend-box-user">@tegan</p>
+                        <p class="trend-box-project">World Peace Builder</p>
+                    </div>
                 </div>
-            </div>
-            <div class="trends">
-                <img>
-                <div class="trend-box">
-                    <p class="trend-box-user">@morgan</p>
-                    <p class="trend-box-project">Super Cool Project</p>
+                <div class="trends">
+                    <img>
+                    <div class="trend-box">
+                        <p class="trend-box-user">@morgan</p>
+                        <p class="trend-box-project">Super Cool Project</p>
+                    </div>
                 </div>
-            </div>
-            <div class="trends">
-                <img>
-                <div class="trend-box">
-                    <p class="trend-box-user">@kendall</p>
-                    <p class="trend-box-project">Life Changing App</p>
+                <div class="trends">
+                    <img>
+                    <div class="trend-box">
+                        <p class="trend-box-user">@kendall</p>
+                        <p class="trend-box-project">Life Changing App</p>
+                    </div>
                 </div>
-            </div>
-            <div class="trends">
-                <img>
-                <div class="trend-box">
-                    <p class="trend-box-user">@alex</p>
-                    <p class="trend-box-project">No Traffic Maker</p>
+                <div class="trends">
+                    <img>
+                    <div class="trend-box">
+                        <p class="trend-box-user">@alex</p>
+                        <p class="trend-box-project">No Traffic Maker</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </main>
