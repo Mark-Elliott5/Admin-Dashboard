@@ -1,3 +1,49 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
 #submit-search {
     display: none;
+}
+
+#side-bar {
+    grid-row: 1 / 4;
+    grid-column: 1 / 1;
+    background-color: rgb(0, 135, 255);
+    color: white;
+}
+
+#nav-search {
+    grid-column: 2 / 2;
+}
+
+#tool-bar {
+    grid-column: 2 / 2;
+}
+
+/* Main grid */
+
+#main-grid {
+    grid-column: 2 / 2;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#projects-pane {
+    grid-column: 1 / 1;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#announcements {
+    grid-column: 2 / 3;
+}
+
+#trending {
+    grid-column: 2 / 3;
 }
