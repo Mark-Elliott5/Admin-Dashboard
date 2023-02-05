@@ -12,9 +12,14 @@ body {
     grid-column: 1;
     background-color: #1992d4;
     color: white;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr 5fr;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     padding: 1rem;
+}
+
+#side-bar div {
+    gap: 1rem;
 }
 
 #side-bar h1 {
@@ -40,13 +45,40 @@ body {
     padding: 1rem;
 }
 
+.notes-avi-user {
+    display: flex;
+    align-items: center;
+}
+
 #submit-search {
     display: none;
 }
 
-.search-bar+input {
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-wrapper svg {
+    flex: 0 0 1rem;
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-bar {
+    flex: 75% 1 0;
     background-color: #e2e8f0;
     border-radius: 12px;
+    width: 50%;
+    border: none;
+    padding: 0.5rem;
+}
+
+input#search-bar:focus {
+    outline: 2px solid #1992d4;
 }
 
 /* Tool bar */
@@ -63,7 +95,7 @@ body {
     gap: 1rem;
 }
 
-#welcome-message img {
+img {
     width: 3rem;
     align-self: center;
 }
@@ -81,7 +113,7 @@ body {
     grid-template-rows: 1fr;
     background-color: #e2e8f0;
     box-shadow: inset 0 5px 7px -5px #00000075;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
 }
 
@@ -96,12 +128,12 @@ main p {
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .project, #announcements, #trending {
     background-color: white;
-    box-shadow: 3px 3px 6px 0px #00000036;
+    box-shadow: 4px 4px 5px 0px #00000029;
     border-radius: 8px;
     padding: 1rem;
 }
@@ -120,4 +152,8 @@ main p {
 
 #trending {
     grid-column: 2 / 3;
+}
+
+.trends p {
+    margin: 0
 }
