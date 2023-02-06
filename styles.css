@@ -31,9 +31,22 @@ button {
     margin: 0;
 }
 
-#relevant-links {
+.relevant-links {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+}
+
+.relevant-links a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.relevant-links svg {
+    flex: 0 0 1.5rem;
+    color: white;
+    filter: invert(1);
 }
 
 #support-links {
