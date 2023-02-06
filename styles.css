@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Side bar */
 
 #side-bar {
@@ -48,6 +52,22 @@ body {
 .notes-avi-user {
     display: flex;
     align-items: center;
+    gap: 1rem;
+}
+
+div.notes-avi-user button {
+    width: 2.5rem;
+    border: none;
+    background: none;
+}
+
+div.notes-avi-user a {
+    text-decoration: none;
+}
+
+div.notes-avi-user a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 #submit-search {
@@ -66,12 +86,13 @@ body {
 
 #search-form {
     display: flex;
+    width: 75%;
 }
 
 #search-bar {
     flex: 75% 1 0;
     background-color: #e2e8f0;
-    border-radius: 12px;
+    border-radius: 16px;
     width: 50%;
     border: none;
     padding: 0.5rem;
