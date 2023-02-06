@@ -19,7 +19,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 1rem;
+    padding: 1.5rem;
     font-weight: bold;
 }
 
@@ -27,8 +27,19 @@ button {
     gap: 1rem;
 }
 
-#side-bar h1 {
+#side-bar h2 {
     margin: 0;
+    font-weight: 500;
+}
+
+#header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#header-wrapper svg {
+    filter: invert(1);
+    flex: 0 0 2rem;
 }
 
 .relevant-links {
@@ -58,10 +69,6 @@ button {
 
 header {
     padding: 0rem 1rem;
-}
-
-h2 {
-    font-weight: 400;
 }
 
 /* Nav search */
@@ -147,15 +154,17 @@ input#search-bar:focus {
 }
 
 #welcome-message svg {
-    flex: 0 0 2.5rem;
+    flex: 0 1 4rem;
+    min-width: 2.5rem;
 }
 
 #hi-there {
     margin: 0;
+    font-weight: 500;
 }
 
 #name {
-    font-size: large;
+    font-size: larger;
     margin: 0.25rem 0px 0px 0px;
 }
 
@@ -200,6 +209,10 @@ main p {
     grid-column: 1;
 }
 
+#projects-pane h2 {
+    font-weight: 400;
+}
+
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -215,6 +228,14 @@ main p {
 
 .project {
     border-left: outset 8px #f0b429;
+}
+
+.project p {
+    margin-top: 0;
+}
+
+.project h3 {
+    margin-bottom: 0;
 }
 
 .project-actions {
