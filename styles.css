@@ -20,6 +20,7 @@ button {
     flex-direction: column;
     gap: 3rem;
     padding: 1rem;
+    font-weight: bold;
 }
 
 #side-bar div {
@@ -38,6 +39,16 @@ button {
 #support-links {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+}
+
+/* Header */
+
+header {
+    padding: 0rem 1rem;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 /* Nav search */
@@ -61,11 +72,15 @@ div.notes-avi-user button {
     background: none;
 }
 
-div.notes-avi-user a {
+#avatar {
+    flex: 0 0 2.5rem;
+}
+
+a {
     text-decoration: none;
 }
 
-div.notes-avi-user a:visited {
+a:visited {
     text-decoration: none;
     color: inherit;
 }
@@ -115,7 +130,11 @@ input#search-bar:focus {
 #welcome-message {
     display: flex;
     gap: 1rem;
-    margin: none;
+    align-items: center;
+}
+
+#welcome-message svg {
+    flex: 0 0 2.5rem;
 }
 
 #hi-there {
