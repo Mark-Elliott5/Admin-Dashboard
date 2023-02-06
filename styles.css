@@ -67,7 +67,7 @@ h2 {
 }
 
 div.notes-avi-user button {
-    width: 2.5rem;
+    flex: 0 0 2.5rem;
     border: none;
     background: none;
 }
@@ -204,6 +204,10 @@ main p {
     border-left: outset 8px #f0b429;
 }
 
+.project-actions {
+    text-align: right;
+}
+
 #announcements-and-trending p{
     font-size: small;
 }
@@ -234,5 +238,5 @@ main p {
 }
 
 .trend-box-user {
-    color: #d49c19;
+    color: black;
 }
