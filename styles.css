@@ -109,11 +109,22 @@ input#search-bar:focus {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 1rem;
+    font-weight: bold;
 }
 
 #welcome-message {
     display: flex;
     gap: 1rem;
+    margin: none;
+}
+
+#hi-there {
+    margin: 0;
+}
+
+#name {
+    font-size: large;
+    margin: 0.25rem 0px 0px 0px;
 }
 
 img {
@@ -122,7 +133,18 @@ img {
 }
 
 #actions {
+    display: flex;
     align-self: center;
+    gap: 2rem;
+}
+
+.action-button {
+    padding: 0.5rem 2rem;
+    background-color: #1992d4;
+    border-radius: 16px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* Main grid */
