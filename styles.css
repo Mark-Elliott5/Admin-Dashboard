@@ -85,7 +85,7 @@ header {
 .notes-avi-user {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(1rem, 10%, 2rem);
 }
 
 div.notes-avi-user button, .project-actions button {
@@ -186,7 +186,7 @@ img {
 }
 
 .action-button {
-    padding: 0.5rem 2rem;
+    padding: 8px 32px;
     background-color: #1992d4;
     border-radius: 16px;
     border-style: none;
@@ -199,7 +199,7 @@ img {
 #main-grid {
     grid-column: 2;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 6fr 2fr;
     background-color: #e2e8f0;
     box-shadow: inset 0 5px 7px -5px #00000075;
     gap: 2rem;
@@ -214,7 +214,7 @@ main p {
     grid-column: 1;
 }
 
-#projects-pane h2 {
+#projects-pane h2, #announcements-and-trending h2 {
     font-weight: 400;
 }
 
@@ -228,10 +228,10 @@ main p {
     background-color: white;
     box-shadow: 4px 4px 5px 0px #00000029;
     border-radius: 8px;
-    padding: 1rem;
 }
 
 .project {
+    padding: 16px;
     border-left: outset 8px #f0b429;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -255,12 +255,49 @@ main p {
     width: 24px;
 }
 
+#announcements-and-trending {
+    grid-column: 2;
+}
+
+#announcements {
+    padding: 2rem;
+}
+
+#trending {
+    padding: 32px;
+}
+
+.announcement:nth-child(even) {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.announcement h4 {
+    margin-bottom: 0;
+}
+
 #announcements-and-trending p{
     font-size: small;
 }
 
 #announcements {
     grid-column: 2 / 3;
+}
+
+.announcement:nth-child(1) {
+    padding-bottom: 16px;
+}
+
+.announcement:nth-child(2) {
+    padding: 16px 0;
+}
+
+.announcement:nth-child(3) {
+    padding-top: 16px;
+}
+
+.announcement h4, p {
+    margin: 0;
 }
 
 #trending {
