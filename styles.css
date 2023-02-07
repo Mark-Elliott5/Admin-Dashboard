@@ -21,6 +21,7 @@ button {
     gap: 3rem;
     padding: 1.5rem;
     font-weight: bold;
+    border-right: 60px solid #1992d4;
 }
 
 #side-bar div {
