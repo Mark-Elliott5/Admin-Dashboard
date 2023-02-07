@@ -1,16 +1,25 @@
+:root {
+    --primary-color: #1992d4;
+    --accent-color: #f0b429;
+    --backdrop-color: white;
+    --shading-color: #e2e8f0;
+    --text-color: black;
+    --subtext-color: grey;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    --primary-color: #1992d4;
-    --accent-color: #f0b429;
-    --backdrop-color: white;
-    --shading-color: #e2e8f0;
 }
 
 button {
     cursor: pointer;
+}
+
+.invert {
+    filter: invert(1);
 }
 
 /* Side bar */
@@ -25,7 +34,7 @@ button {
     gap: 3rem;
     padding: 1.5rem;
     font-weight: bold;
-    border-right: 60px solid var(--main-color);
+    border-right: 60px solid var(--primary-color);
 }
 
 #side-bar div {
@@ -37,12 +46,12 @@ button {
     font-weight: 500;
 }
 
-#header-wrapper {
+#logo-wrapper {
     display: flex;
     align-items: center;
 }
 
-#header-wrapper svg {
+#logo-wrapper svg {
     filter: invert(1);
     flex: 0 0 2rem;
 }
@@ -75,6 +84,8 @@ button {
 
 header {
     padding: 0rem 1rem;
+    background-color: var(--backdrop-color);
+    color: var(--text-color);
 }
 
 /* Nav search */
@@ -136,7 +147,7 @@ a:visited {
 
 #search-bar {
     flex: 75% 1 0;
-    background-color: var(--shading-color);
+    background-color: #e2e8f0;
     border-radius: 16px;
     width: 50%;
     border: none;
@@ -144,7 +155,7 @@ a:visited {
 }
 
 input#search-bar:focus {
-    outline: 2px solid var(--main-color);
+    outline: 2px solid var(--primary-color);
 }
 
 /* Tool bar */
@@ -191,7 +202,7 @@ img {
 
 .action-button {
     padding: 8px 32px;
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
     border-radius: 16px;
     border-style: none;
     color: white;
@@ -211,11 +222,15 @@ img {
 }
 
 main p {
-    color: grey;
+    color: var(--subtext-color);
 }
 
 #projects-pane {
     grid-column: 1;
+}
+
+#projects-pane, #announcements-and-trending, .trend-box-user {
+    color: var(--text-color);
 }
 
 #projects-pane h2, #announcements-and-trending h2 {
@@ -252,6 +267,7 @@ main p {
 .project-actions {
     text-align: right;
     position: relative;
+    margin-top: 16px;
 }
 
 .project-actions button {
@@ -318,13 +334,9 @@ main p {
 }
 
 .trends p {
-    margin: 0
+    margin: 0;
 }
 
 .trends svg {
     flex: 0 0 2.5rem;
-}
-
-.trend-box-user {
-    color: black;
 }
