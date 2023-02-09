@@ -5,6 +5,95 @@
     --shading-color: #e2e8f0;
     --text-color: black;
     --subtext-color: grey;
+    --bar-text-color: white;
+}
+
+
+.slate-theme {
+    --backdrop-color: #475569;
+    --accent-color: #94a3b8;
+    --primary-color: #64748b;
+    --shading-color: #1e293b;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
+.stone-theme {
+    --backdrop-color: #57534e;
+    --accent-color: #a8a29e;
+    --primary-color: #78716c;
+    --shading-color: #292524;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
+.teal-theme {
+    --backdrop-color: #0d9488;
+    --accent-color: #2dd4bf;
+    --primary-color: #14b8a6;
+    --shading-color: #115e59;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
+.green-theme {
+    --backdrop-color: #16a34a;
+    --accent-color: #4ade80;
+    --primary-color: #22c55e;
+    --shading-color: #166534;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
+.violet-theme {
+    --backdrop-color: #7c3aed;
+    --accent-color: #c084fc;
+    --primary-color: #a855f7;
+    --shading-color: #6b21a8;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
+#blocker {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#theme-selector {
+    position: fixed;
+    right:0;
+    top: 0;
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+#themes {
+    align-items: flex-start;
+    color: var(--bar-text-color);
+    padding: 24px;
+}
+
+.hide-themes-bar {
+    display: none !important;
+}
+
+#themes input {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+#themes div:nth-child(n) {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    flex: 1;
+}
+
+#themes div:nth-child(n):not(:first-child) {
+    border-top: 1px solid white;
 }
 
 body {
@@ -12,15 +101,6 @@ body {
     grid-template-columns: 1fr 5fr;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-}
-
-.dark-mode {
-    --backdrop-color: #475569;
-    --accent-color: #94a3b8;
-    --primary-color: #64748b;
-    --shading-color: #1e293b;
-    --text-color: white;
-    --subtext-color: lightgrey;
 }
 
 .grid-collapse {
@@ -49,7 +129,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 1.5rem;
+    padding: 24px;
     font-weight: bold;
     border-right: 60px solid var(--primary-color);
 }
