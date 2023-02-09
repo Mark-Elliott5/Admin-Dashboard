@@ -67,12 +67,14 @@
     top: 0;
     background-color: var(--primary-color);
     height: 100vh;
+    box-shadow: 0 0 15px 2px rgb(0 0 0 / 50%);
 }
 
 #themes {
     align-items: flex-start;
     color: var(--bar-text-color);
     padding: 24px;
+    font-weight: 500;
 }
 
 .hide-themes-bar {
@@ -83,6 +85,10 @@
     opacity: 0;
     width: 0;
     margin: 0;
+}
+
+#themes label {
+    cursor: pointer;
 }
 
 #themes div:nth-child(n) {
