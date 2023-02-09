@@ -337,7 +337,7 @@ main {
 }
 
 #projects-pane, #announcements-and-trending, .trend-box-user {
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
 #projects-pane h2, #announcements-and-trending h2 {
