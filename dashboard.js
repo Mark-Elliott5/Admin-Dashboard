@@ -16,13 +16,7 @@ darkModeButton.addEventListener('click', () => {
 })
 
 sidebarExpandButton.addEventListener('click', () => {
-    if (!(body.classList.contains('grid-collapse'))) {
-        console.log('sidebar collapsed');
-        body.classList.add('grid-collapse');
-        sidebar.classList.add('side-bar-collapse');
-    } else {
-        console.log('sidebar expanded');
-        body.classList.remove('grid-collapse');
-        sidebar.classList.remove('side-bar-collapse');
-    }
+    console.log('sidebar collapsed');
+    body.classList.toggle('grid-collapse');
+    sidebar.classList.toggle('side-bar-collapse');
 })
