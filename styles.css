@@ -448,11 +448,11 @@ main {
     flex: 0 0 2.5rem;
 }
 
-.progress:hover {
-    animation: 3s linear infinite progress;
+.rainbow:hover {
+    animation: 3s linear infinite rainbow;
 }
 
-@keyframes progress {
+@keyframes rainbow {
     0% {
         fill: red;
     }
