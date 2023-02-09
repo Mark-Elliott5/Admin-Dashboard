@@ -14,6 +14,15 @@ body {
     margin: 0;
 }
 
+.dark-mode {
+    --backdrop-color: #475569;
+    --accent-color: #94a3b8;
+    --primary-color: #64748b;
+    --shading-color: #1e293b;
+    --text-color: white;
+    --subtext-color: lightgrey;
+}
+
 .grid-collapse {
     grid-template-columns: 1fr !important;
 }
