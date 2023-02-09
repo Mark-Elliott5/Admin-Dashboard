@@ -447,3 +447,37 @@ main {
 .trends svg {
     flex: 0 0 2.5rem;
 }
+
+.progress:hover {
+    animation: 3s linear infinite progress;
+}
+
+@keyframes progress {
+    0% {
+        fill: red;
+    }
+
+    16.67% {
+        fill: orange
+    }
+
+    33% {
+        fill: yellow;
+    }
+
+    50% {
+        fill: green;
+    }
+
+    66% {
+        fill: blue;
+    }
+
+    83.33% {
+        fill: purple
+    }
+
+    100% {
+        fill: red;
+    }
+}
