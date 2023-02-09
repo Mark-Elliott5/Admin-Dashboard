@@ -32,6 +32,10 @@ themesBar.addEventListener('change', (e) => {
     }
 })
 
+themesBar.addEventListener('click', (e) => {
+    e.stopPropagation();
+})
+
 sidebarExpandButton.addEventListener('click', () => {
     console.log('sidebar collapsed');
     body.classList.toggle('grid-collapse');
