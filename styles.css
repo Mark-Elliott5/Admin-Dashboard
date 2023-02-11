@@ -318,7 +318,7 @@ main {
     grid-column: 2;
 }
 
-#main-grid {
+#projects-grid {
     grid-column: 2;
     display: grid;
     grid-template-columns: 6fr 2fr;
@@ -328,7 +328,7 @@ main {
     padding: 16px;
 }
 
-#main-grid p {
+#projects-grid p {
     color: var(--subtext-color);
 }
 
